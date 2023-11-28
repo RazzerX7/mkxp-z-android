@@ -16,6 +16,8 @@ jobs:
     env:
       ARCH: linux-x86_64
     steps:
+      - name: Change wrapper permissions
+        run: chmod +x ./gradlew
       - name: Checkout code
         uses: actions/checkout@v3
       - name: Setup Ruby
