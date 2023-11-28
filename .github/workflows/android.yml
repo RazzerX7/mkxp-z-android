@@ -26,6 +26,12 @@ jobs:
       - name: Permisions
         working-directory: ./app/jni
         run: chmod +x ./get_deps.sh
+      - name: Permisions 2
+        working-directory: ./app/jni
+        run: chmod +x ./uchardet_Pixman.sh
+      - name: Get dependencies 2
+        working-directory: ./app/jni
+        run: ./uchardet_Pixman.sh
       - name: Get dependencies
         working-directory: ./app/jni
         run: ./get_deps.sh
