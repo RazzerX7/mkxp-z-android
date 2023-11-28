@@ -25,7 +25,7 @@ jobs:
           bundler-cache: false
       - name: Get dependencies
         working-directory: ./app/jni
-        chmod +x ./get_deps.sh
+        run: chmod +x ./get_deps.sh
         run: ./get_deps.sh
       - name: Restore cache
         id: cache-restore
