@@ -50,7 +50,7 @@ if [[ ! -d "Pixman" ]]; then
   wget -q https://github.com/RazzerX7/mkxp-z-android/blob/4a557f565f95dba02acb7429488ad5498f34ebed/pixman-pixman-0.42.2.tar.gz
   tar -xzf pixman-pixman-0.42.2.tar.gz
   mv pixman-pixman-0.42.2 Pixman
-  rm -f uchardet-v0.0.8.tar.gz
+  rm -f pixman-pixman-0.42.2.tar.gz
 fi
 
 # PhysicsFS
