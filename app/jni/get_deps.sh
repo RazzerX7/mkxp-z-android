@@ -36,15 +36,21 @@ if [[ ! -d "libiconv" ]]; then
 fi
 
 # Freedesktop uchardet
-if 1 > 0; then
+if [[ ! -d "uchardet" ]]; then
   echo "Downloading uchardet..."
-  git clone $GIT_ARGS -b v0.0.8 https://gitlab.freedesktop.org/uchardet uchardet
+  wget -q https://github.com/RazzerX7/mkxp-z-android/blob/4a557f565f95dba02acb7429488ad5498f34ebed/uchardet-v0.0.8.tar.gz
+  tar -xzf uchardet-v0.0.8.tar.gz
+  mv uchardet-v0.0.8 uchardet
+  rm -f uchardet-v0.0.8.tar.gz
 fi
 
 # Freedesktop Pixman
-if 1 > 0; then
-  echo "Downloading Pixman..."
-  git clone $GIT_ARGS -b pixman-0.42.2 https://gitlab.freedesktop.org/pixman/pixman.git pixman
+if [[ ! -d "Pixman" ]]; then
+  echo "Downloading uchardet..."
+  wget -q https://github.com/RazzerX7/mkxp-z-android/blob/4a557f565f95dba02acb7429488ad5498f34ebed/pixman-pixman-0.42.2.tar.gz
+  tar -xzf pixman-pixman-0.42.2.tar.gz
+  mv pixman-pixman-0.42.2 Pixman
+  rm -f uchardet-v0.0.8.tar.gz
 fi
 
 # PhysicsFS
