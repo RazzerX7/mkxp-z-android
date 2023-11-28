@@ -17,7 +17,7 @@ jobs:
       ARCH: linux-x86_64
     steps:
       - name: Change wrapper permissions
-        run: chmod +x ./gradlew
+        run: chmod +x ${{ github.workspace }}/gradlew
       - name: Checkout code
         uses: actions/checkout@v3
       - name: Setup Ruby
