@@ -3,19 +3,6 @@
 # This script downloads/git clones project dependencies
 # such as libogg, SDL2, Ruby, etc.
 
-echo "Downloading uchardet..."
-wget -q https://raw.githubusercontent.com/RazzerX7/mkxp-z-android/master/pixman-pixman-0.42.2.tar.gz
-tar -xzf uchardet-v0.0.8.tar.gz
-mv uchardet-v0.0.8 uchardet
-rm -f uchardet-v0.0.8.tar.gz
-
-echo "Downloading uchardet..."
-wget -q https://raw.githubusercontent.com/RazzerX7/mkxp-z-android/master/pixman-pixman-0.42.2.tar.gz
-tar -xzf pixman-pixman-0.42.2.tar.gz
-mv pixman-pixman-0.42.2 Pixman
-rm -f pixman-pixman-0.42.2.tar.gz
-
-
 GIT_ARGS="-q -c advice.detachedHead=false --single-branch --depth 1"
 
 # Xiph libogg
@@ -46,24 +33,6 @@ if [[ ! -d "libiconv" ]]; then
   tar -xzf libiconv-1.17.tar.gz
   mv libiconv-1.17 libiconv
   rm -f libiconv-1.17.tar.gz
-fi
-
-# Freedesktop uchardet
-if [[ ! -d "uchardet" ]]; then
-  echo "Downloading uchardet..."
-  wget -q https://raw.githubusercontent.com/RazzerX7/mkxp-z-android/master/pixman-pixman-0.42.2.tar.gz
-  tar -xzf uchardet-v0.0.8.tar.gz
-  mv uchardet-v0.0.8 uchardet
-  rm -f uchardet-v0.0.8.tar.gz
-fi
-
-# Freedesktop Pixman
-if [[ ! -d "Pixman" ]]; then
-  echo "Downloading uchardet..."
-  wget -q https://raw.githubusercontent.com/RazzerX7/mkxp-z-android/master/pixman-pixman-0.42.2.tar.gz
-  tar -xzf pixman-pixman-0.42.2.tar.gz
-  mv pixman-pixman-0.42.2 Pixman
-  rm -f pixman-pixman-0.42.2.tar.gz
 fi
 
 # PhysicsFS
