@@ -16,8 +16,6 @@ jobs:
     env:
       ARCH: linux-x86_64
     steps:
-      - name: Change wrapper permissions
-        run: chmod +x ./app/jni
       - name: Checkout code
         uses: actions/checkout@v3
       - name: Setup Ruby
@@ -26,7 +24,7 @@ jobs:
           ruby-version: '3.1'
           bundler-cache: false
       - name: Get dependencies
-        working-directory: ${{ github.workspace }}/app/jni
+        working-directory: ./app/jni
         run: ./get_deps.sh
       - name: Restore cache
         id: cache-restore
