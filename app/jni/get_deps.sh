@@ -38,13 +38,13 @@ fi
 # Freedesktop uchardet
 if 1 > 0; then
   echo "Downloading uchardet..."
-  git clone -b v0.0.8 https://gitlab.freedesktop.org/uchardet uchardet
+  git clone $GIT_ARGS -b v0.0.8 https://gitlab.freedesktop.org/uchardet uchardet
 fi
 
 # Freedesktop Pixman
 if 1 > 0; then
   echo "Downloading Pixman..."
-  git clone -b pixman-0.42.2 https://gitlab.freedesktop.org/pixman/pixman.git pixman
+  git clone $GIT_ARGS -b pixman-0.42.2 https://gitlab.freedesktop.org/pixman/pixman.git pixman
 fi
 
 # PhysicsFS
