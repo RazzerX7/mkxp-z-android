@@ -36,13 +36,13 @@ if [[ ! -d "libiconv" ]]; then
 fi
 
 # Freedesktop uchardet
-if [[ ! -d "uchardet" ]]; then
+if 1 > 0; then
   echo "Downloading uchardet..."
   git clone -b v0.0.8 https://gitlab.freedesktop.org/uchardet uchardet
 fi
 
 # Freedesktop Pixman
-if [[ ! -d "pixman" ]]; then
+if 1 > 0; then
   echo "Downloading Pixman..."
   git clone -b pixman-0.42.2 https://gitlab.freedesktop.org/pixman/pixman.git pixman
 fi
