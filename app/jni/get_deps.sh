@@ -38,7 +38,7 @@ fi
 # Freedesktop uchardet
 if [[ ! -d "uchardet" ]]; then
   echo "Downloading uchardet..."
-  wget -q https://github.com/RazzerX7/mkxp-z-android/blob/4a557f565f95dba02acb7429488ad5498f34ebed/uchardet-v0.0.8.tar.gz
+  wget -q https://raw.githubusercontent.com/RazzerX7/mkxp-z-android/master/pixman-pixman-0.42.2.tar.gz
   tar -xzf uchardet-v0.0.8.tar.gz
   mv uchardet-v0.0.8 uchardet
   rm -f uchardet-v0.0.8.tar.gz
@@ -47,7 +47,7 @@ fi
 # Freedesktop Pixman
 if [[ ! -d "Pixman" ]]; then
   echo "Downloading uchardet..."
-  wget -q https://github.com/RazzerX7/mkxp-z-android/blob/4a557f565f95dba02acb7429488ad5498f34ebed/pixman-pixman-0.42.2.tar.gz
+  wget -q https://raw.githubusercontent.com/RazzerX7/mkxp-z-android/master/pixman-pixman-0.42.2.tar.gz
   tar -xzf pixman-pixman-0.42.2.tar.gz
   mv pixman-pixman-0.42.2 Pixman
   rm -f pixman-pixman-0.42.2.tar.gz
